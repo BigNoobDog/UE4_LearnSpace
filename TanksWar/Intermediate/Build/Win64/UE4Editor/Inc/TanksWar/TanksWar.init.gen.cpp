@@ -19,8 +19,8 @@ void EmptyLinkFunctionForGeneratedCodeTanksWar_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/TanksWar",
 				PKG_CompiledIn | 0x00000000,
-				0x28852370,
-				0x78F816A5,
+				0xFE751F95,
+				0x97E430DF,
 				nullptr, 0,
 				METADATA_PARAMS(nullptr, 0)
 			};
