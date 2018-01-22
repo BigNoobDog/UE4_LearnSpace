@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\TanksWar.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{8C8A40B0-8873-46B3-AA63-64B722E24A9D}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\TanksWar.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\TanksWarEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{FE060D58-AA7B-4648-9317-FD447C1777F4}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\TanksWar">
+			<UniqueIdentifier>{3F4B2F85-D13C-4FB6-8CCE-462DD11A4375}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\TanksWar\TanksWar.Build.cs">
+			<Filter>Source\TanksWar</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\TanksWar\TanksWar.cpp">
+			<Filter>Source\TanksWar</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\TanksWar\TanksWar.h">
+			<Filter>Source\TanksWar</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\TanksWar\TanksWarGameModeBase.cpp">
+			<Filter>Source\TanksWar</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\TanksWar\TanksWarGameModeBase.h">
+			<Filter>Source\TanksWar</Filter>
+		</ClInclude >
+	</ItemGroup>
+</Project>
