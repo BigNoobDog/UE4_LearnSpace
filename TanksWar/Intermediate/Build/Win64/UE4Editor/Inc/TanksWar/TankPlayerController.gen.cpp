@@ -41,6 +41,16 @@ void EmptyLinkFunctionForGeneratedCodeTankPlayerController() {}
 				{ "ModuleRelativePath", "TankPlayerController.h" },
 			};
 #endif
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RayDis_MetaData[] = {
+				{ "Category", "TankPlayerController" },
+				{ "ModuleRelativePath", "TankPlayerController.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FFloatPropertyParams NewProp_RayDis = { UE4CodeGen_Private::EPropertyClass::Float, "RayDis", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ATankPlayerController, RayDis), METADATA_PARAMS(NewProp_RayDis_MetaData, ARRAY_COUNT(NewProp_RayDis_MetaData)) };
+			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_RayDis,
+			};
 			static const FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 				TCppClassTypeTraits<ATankPlayerController>::IsAbstract,
 			};
@@ -49,7 +59,7 @@ void EmptyLinkFunctionForGeneratedCodeTankPlayerController() {}
 				DependentSingletons, ARRAY_COUNT(DependentSingletons),
 				0x00900284u,
 				nullptr, 0,
-				nullptr, 0,
+				PropPointers, ARRAY_COUNT(PropPointers),
 				"Game",
 				&StaticCppClassTypeInfo,
 				nullptr, 0,
@@ -59,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeTankPlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATankPlayerController, 3480794243);
+	IMPLEMENT_CLASS(ATankPlayerController, 3791215504);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ATankPlayerController(Z_Construct_UClass_ATankPlayerController, &ATankPlayerController::StaticClass, TEXT("/Script/TanksWar"), TEXT("ATankPlayerController"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ATankPlayerController);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

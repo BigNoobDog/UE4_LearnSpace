@@ -61,6 +61,15 @@
     <ClInclude Include="..\..\Source\TanksWar\TankMovementComponent.h">
       <Filter>Source\TanksWar</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\TanksWar\TankTurret.h">
+      <Filter>Source\TanksWar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TanksWar\TankAimingComponent.h">
+      <Filter>Source\TanksWar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TanksWar\Bullet.h">
+      <Filter>Source\TanksWar</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\TanksWar\TankPlayerController.cpp">
@@ -70,6 +79,15 @@
       <Filter>Source\TanksWar</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\TanksWar\TankMovementComponent.cpp">
+      <Filter>Source\TanksWar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TanksWar\TankTurret.cpp">
+      <Filter>Source\TanksWar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TanksWar\TankAimingComponent.cpp">
+      <Filter>Source\TanksWar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TanksWar\Bullet.cpp">
       <Filter>Source\TanksWar</Filter>
     </ClCompile>
   </ItemGroup>

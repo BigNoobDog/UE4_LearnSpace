@@ -16,5 +16,4 @@ class TANKSWAR_API UTankMovementComponent : public UNavMovementComponent
 
 public:
 	virtual void BeginPlay() override;
-	
 };

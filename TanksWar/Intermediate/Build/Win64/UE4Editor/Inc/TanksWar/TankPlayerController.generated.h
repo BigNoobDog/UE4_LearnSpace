@@ -13,9 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define TANKSWAR_TankPlayerController_generated_h
 
-#define TanksWar_Source_TanksWar_TankPlayerController_h_16_RPC_WRAPPERS
-#define TanksWar_Source_TanksWar_TankPlayerController_h_16_RPC_WRAPPERS_NO_PURE_DECLS
-#define TanksWar_Source_TanksWar_TankPlayerController_h_16_INCLASS_NO_PURE_DECLS \
+#define TanksWar_Source_TanksWar_TankPlayerController_h_18_RPC_WRAPPERS
+#define TanksWar_Source_TanksWar_TankPlayerController_h_18_RPC_WRAPPERS_NO_PURE_DECLS
+#define TanksWar_Source_TanksWar_TankPlayerController_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATankPlayerController(); \
 	friend TANKSWAR_API class UClass* Z_Construct_UClass_ATankPlayerController(); \
@@ -25,7 +25,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define TanksWar_Source_TanksWar_TankPlayerController_h_16_INCLASS \
+#define TanksWar_Source_TanksWar_TankPlayerController_h_18_INCLASS \
 private: \
 	static void StaticRegisterNativesATankPlayerController(); \
 	friend TANKSWAR_API class UClass* Z_Construct_UClass_ATankPlayerController(); \
@@ -35,7 +35,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define TanksWar_Source_TanksWar_TankPlayerController_h_16_STANDARD_CONSTRUCTORS \
+#define TanksWar_Source_TanksWar_TankPlayerController_h_18_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ATankPlayerController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ATankPlayerController) \
@@ -48,7 +48,7 @@ private: \
 public:
 
 
-#define TanksWar_Source_TanksWar_TankPlayerController_h_16_ENHANCED_CONSTRUCTORS \
+#define TanksWar_Source_TanksWar_TankPlayerController_h_18_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ATankPlayerController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -61,26 +61,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATankPlayerController); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ATankPlayerController)
 
 
-#define TanksWar_Source_TanksWar_TankPlayerController_h_16_PRIVATE_PROPERTY_OFFSET
-#define TanksWar_Source_TanksWar_TankPlayerController_h_13_PROLOG
-#define TanksWar_Source_TanksWar_TankPlayerController_h_16_GENERATED_BODY_LEGACY \
+#define TanksWar_Source_TanksWar_TankPlayerController_h_18_PRIVATE_PROPERTY_OFFSET
+#define TanksWar_Source_TanksWar_TankPlayerController_h_15_PROLOG
+#define TanksWar_Source_TanksWar_TankPlayerController_h_18_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TanksWar_Source_TanksWar_TankPlayerController_h_16_PRIVATE_PROPERTY_OFFSET \
-	TanksWar_Source_TanksWar_TankPlayerController_h_16_RPC_WRAPPERS \
-	TanksWar_Source_TanksWar_TankPlayerController_h_16_INCLASS \
-	TanksWar_Source_TanksWar_TankPlayerController_h_16_STANDARD_CONSTRUCTORS \
+	TanksWar_Source_TanksWar_TankPlayerController_h_18_PRIVATE_PROPERTY_OFFSET \
+	TanksWar_Source_TanksWar_TankPlayerController_h_18_RPC_WRAPPERS \
+	TanksWar_Source_TanksWar_TankPlayerController_h_18_INCLASS \
+	TanksWar_Source_TanksWar_TankPlayerController_h_18_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define TanksWar_Source_TanksWar_TankPlayerController_h_16_GENERATED_BODY \
+#define TanksWar_Source_TanksWar_TankPlayerController_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TanksWar_Source_TanksWar_TankPlayerController_h_16_PRIVATE_PROPERTY_OFFSET \
-	TanksWar_Source_TanksWar_TankPlayerController_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	TanksWar_Source_TanksWar_TankPlayerController_h_16_INCLASS_NO_PURE_DECLS \
-	TanksWar_Source_TanksWar_TankPlayerController_h_16_ENHANCED_CONSTRUCTORS \
+	TanksWar_Source_TanksWar_TankPlayerController_h_18_PRIVATE_PROPERTY_OFFSET \
+	TanksWar_Source_TanksWar_TankPlayerController_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	TanksWar_Source_TanksWar_TankPlayerController_h_18_INCLASS_NO_PURE_DECLS \
+	TanksWar_Source_TanksWar_TankPlayerController_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
