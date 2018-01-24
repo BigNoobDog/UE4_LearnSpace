@@ -9,6 +9,10 @@
 #include "Components/ActorComponent.h"
 #include "TankAimingComponent.generated.h"
 
+UENUM()
+enum class EFireState : uint8 {
+	Reloading, Aiming, Locked
+};
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class TANKSWAR_API UTankAimingComponent : public UActorComponent
@@ -37,9 +41,19 @@ public:
 	
 	UTankTurret* Turret = nullptr;
 
-	UPROPERTY(EditAnywhere)
-	float BulletLunchSpeed = 10000.0f;
+	UPROPERTY(EditAnywhere, Category = "SetUp")
+		float BulletLunchSpeed = 10000.0f;
 
 	UPROPERTY(EditAnywhere, Category = "SetUp")
-	TSubclassOf<ABullet> BulletType;
+		float ReloadTime = 3.0f;
+
+	UPROPERTY(EditAnywhere, Category = "SetUp")
+		TSubclassOf<ABullet> BulletType;
+
+	UPROPERTY(BlueprintReadOnly)
+		EFireState Firestate = EFireState::Aiming;
+
+	float CurrentFireTime = 0.0f;
+
+	void CheckFireState();
 };

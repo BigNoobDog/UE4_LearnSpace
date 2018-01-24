@@ -8,13 +8,34 @@
 #include "ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class ATank;
 #ifdef TANKSWAR_TankPlayerController_generated_h
 #error "TankPlayerController.generated.h already included, missing '#pragma once' in TankPlayerController.h"
 #endif
 #define TANKSWAR_TankPlayerController_generated_h
 
-#define TanksWar_Source_TanksWar_TankPlayerController_h_18_RPC_WRAPPERS
-#define TanksWar_Source_TanksWar_TankPlayerController_h_18_RPC_WRAPPERS_NO_PURE_DECLS
+#define TanksWar_Source_TanksWar_TankPlayerController_h_18_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetTank) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(ATank**)Z_Param__Result=this->GetTank(); \
+		P_NATIVE_END; \
+	}
+
+
+#define TanksWar_Source_TanksWar_TankPlayerController_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetTank) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(ATank**)Z_Param__Result=this->GetTank(); \
+		P_NATIVE_END; \
+	}
+
+
 #define TanksWar_Source_TanksWar_TankPlayerController_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATankPlayerController(); \

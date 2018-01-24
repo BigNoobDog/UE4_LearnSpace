@@ -13,16 +13,64 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeTankAimingComponent() {}
 // Cross Module References
+	TANKSWAR_API UEnum* Z_Construct_UEnum_TanksWar_EFireState();
+	UPackage* Z_Construct_UPackage__Script_TanksWar();
 	TANKSWAR_API UClass* Z_Construct_UClass_UTankAimingComponent_NoRegister();
 	TANKSWAR_API UClass* Z_Construct_UClass_UTankAimingComponent();
 	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
-	UPackage* Z_Construct_UPackage__Script_TanksWar();
 	TANKSWAR_API UFunction* Z_Construct_UFunction_UTankAimingComponent_Fire();
 	TANKSWAR_API UFunction* Z_Construct_UFunction_UTankAimingComponent_Init();
 	TANKSWAR_API UClass* Z_Construct_UClass_UTankTurret_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	TANKSWAR_API UClass* Z_Construct_UClass_ABullet_NoRegister();
 // End Cross Module References
+	static UEnum* EFireState_StaticEnum()
+	{
+		static UEnum* Singleton = nullptr;
+		if (!Singleton)
+		{
+			Singleton = GetStaticEnum(Z_Construct_UEnum_TanksWar_EFireState, Z_Construct_UPackage__Script_TanksWar(), TEXT("EFireState"));
+		}
+		return Singleton;
+	}
+	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFireState(EFireState_StaticEnum, TEXT("/Script/TanksWar"), TEXT("EFireState"), false, nullptr, nullptr);
+	uint32 Get_Z_Construct_UEnum_TanksWar_EFireState_CRC() { return 850653365U; }
+	UEnum* Z_Construct_UEnum_TanksWar_EFireState()
+	{
+#if WITH_HOT_RELOAD
+		UPackage* Outer = Z_Construct_UPackage__Script_TanksWar();
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EFireState"), 0, Get_Z_Construct_UEnum_TanksWar_EFireState_CRC(), false);
+#else
+		static UEnum* ReturnEnum = nullptr;
+#endif // WITH_HOT_RELOAD
+		if (!ReturnEnum)
+		{
+			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
+				{ "EFireState::Reloading", (int64)EFireState::Reloading },
+				{ "EFireState::Aiming", (int64)EFireState::Aiming },
+				{ "EFireState::Locked", (int64)EFireState::Locked },
+			};
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+				{ "ModuleRelativePath", "TankAimingComponent.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FEnumParams EnumParams = {
+				(UObject*(*)())Z_Construct_UPackage__Script_TanksWar,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				"EFireState",
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				nullptr,
+				(uint8)UEnum::ECppForm::EnumClass,
+				"EFireState",
+				Enumerators,
+				ARRAY_COUNT(Enumerators),
+				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
+			};
+			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
+		}
+		return ReturnEnum;
+	}
 	void UTankAimingComponent::StaticRegisterNativesUTankAimingComponent()
 	{
 		UClass* Class = UTankAimingComponent::StaticClass();
@@ -103,6 +151,14 @@ void EmptyLinkFunctionForGeneratedCodeTankAimingComponent() {}
 			};
 #endif
 #if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Firestate_MetaData[] = {
+				{ "Category", "TankAimingComponent" },
+				{ "ModuleRelativePath", "TankAimingComponent.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FEnumPropertyParams NewProp_Firestate = { UE4CodeGen_Private::EPropertyClass::Enum, "Firestate", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000014, 1, nullptr, STRUCT_OFFSET(UTankAimingComponent, Firestate), Z_Construct_UEnum_TanksWar_EFireState, METADATA_PARAMS(NewProp_Firestate_MetaData, ARRAY_COUNT(NewProp_Firestate_MetaData)) };
+			static const UE4CodeGen_Private::FBytePropertyParams NewProp_Firestate_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, 0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BulletType_MetaData[] = {
 				{ "Category", "SetUp" },
 				{ "ModuleRelativePath", "TankAimingComponent.h" },
@@ -110,14 +166,24 @@ void EmptyLinkFunctionForGeneratedCodeTankAimingComponent() {}
 #endif
 			static const UE4CodeGen_Private::FClassPropertyParams NewProp_BulletType = { UE4CodeGen_Private::EPropertyClass::Class, "BulletType", RF_Public|RF_Transient|RF_MarkAsNative, 0x0014000000000001, 1, nullptr, STRUCT_OFFSET(UTankAimingComponent, BulletType), Z_Construct_UClass_ABullet_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(NewProp_BulletType_MetaData, ARRAY_COUNT(NewProp_BulletType_MetaData)) };
 #if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ReloadTime_MetaData[] = {
+				{ "Category", "SetUp" },
+				{ "ModuleRelativePath", "TankAimingComponent.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReloadTime = { UE4CodeGen_Private::EPropertyClass::Float, "ReloadTime", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000001, 1, nullptr, STRUCT_OFFSET(UTankAimingComponent, ReloadTime), METADATA_PARAMS(NewProp_ReloadTime_MetaData, ARRAY_COUNT(NewProp_ReloadTime_MetaData)) };
+#if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BulletLunchSpeed_MetaData[] = {
-				{ "Category", "TankAimingComponent" },
+				{ "Category", "SetUp" },
 				{ "ModuleRelativePath", "TankAimingComponent.h" },
 			};
 #endif
 			static const UE4CodeGen_Private::FFloatPropertyParams NewProp_BulletLunchSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "BulletLunchSpeed", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000001, 1, nullptr, STRUCT_OFFSET(UTankAimingComponent, BulletLunchSpeed), METADATA_PARAMS(NewProp_BulletLunchSpeed_MetaData, ARRAY_COUNT(NewProp_BulletLunchSpeed_MetaData)) };
 			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_Firestate,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_Firestate_Underlying,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_BulletType,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_ReloadTime,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_BulletLunchSpeed,
 			};
 			static const FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -138,7 +204,7 @@ void EmptyLinkFunctionForGeneratedCodeTankAimingComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UTankAimingComponent, 253069168);
+	IMPLEMENT_CLASS(UTankAimingComponent, 2932206064);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UTankAimingComponent(Z_Construct_UClass_UTankAimingComponent, &UTankAimingComponent::StaticClass, TEXT("/Script/TanksWar"), TEXT("UTankAimingComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UTankAimingComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

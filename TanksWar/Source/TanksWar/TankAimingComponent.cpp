@@ -30,6 +30,7 @@ void UTankAimingComponent::TickComponent(float DeltaTime, ELevelTick TickType, F
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
 	// ...
+	CheckFireState();
 }
 
 void UTankAimingComponent::Init(UTankTurret* turret)
@@ -39,12 +40,17 @@ void UTankAimingComponent::Init(UTankTurret* turret)
 
 void UTankAimingComponent::Fire()
 {
-	if (Turret == nullptr || BulletType == nullptr) {
+	bool isReload = false;
+	if ((FPlatformTime::Seconds() - CurrentFireTime) > ReloadTime){
+		isReload = true;
+	}
+	if (Turret == nullptr || BulletType == nullptr || !isReload) {
 		UE_LOG(LogTemp, Warning, TEXT("Turret or Bullet is nullptr!"));
 		return;
 	}
 	ABullet* TargetBullet = GetWorld()->SpawnActor<ABullet>(BulletType, Turret->GetSocketLocation(FName("FireSpawn")), Turret->GetSocketRotation(FName("FireSpawn")));
 	TargetBullet->Lunch(BulletLunchSpeed);
+	CurrentFireTime = FPlatformTime::Seconds();
 }
 
 void UTankAimingComponent::AimDir(FVector TargetDir)
@@ -64,3 +70,20 @@ void UTankAimingComponent::AimDir(FVector TargetDir)
 	}
 }
 
+void UTankAimingComponent::CheckFireState()
+{
+	if (Turret == nullptr || BulletType == nullptr) {
+		UE_LOG(LogTemp, Warning, TEXT("Turret or Bullet is nullptr!"));
+		return;
+	}
+	if ((FPlatformTime::Seconds() - CurrentFireTime) < ReloadTime) {
+		Firestate = EFireState::Reloading;
+		return;
+	}
+	if (FMath::Abs(Turret->GetChangeYaw()) > 3 || FMath::Abs(Turret->GetChangePicth()) > 3) {
+		Firestate = EFireState::Aiming;
+	}
+	else {
+		Firestate = EFireState::Locked;
+	}
+}

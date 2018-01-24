@@ -29,4 +29,12 @@ public:
 		float RotMinPitch = -5;
 
 	void MoveTurret(FVector Dir);
+
+	float GetChangeYaw();
+
+	float ChangeYaw;
+
+	float GetChangePicth();
+
+	float ChangePitch;
 };

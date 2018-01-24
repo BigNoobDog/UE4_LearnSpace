@@ -14,7 +14,7 @@ class UTankTurret;
 #endif
 #define TANKSWAR_TankAimingComponent_generated_h
 
-#define TanksWar_Source_TanksWar_TankAimingComponent_h_16_RPC_WRAPPERS \
+#define TanksWar_Source_TanksWar_TankAimingComponent_h_20_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execFire) \
 	{ \
@@ -34,7 +34,7 @@ class UTankTurret;
 	}
 
 
-#define TanksWar_Source_TanksWar_TankAimingComponent_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+#define TanksWar_Source_TanksWar_TankAimingComponent_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execFire) \
 	{ \
@@ -54,7 +54,7 @@ class UTankTurret;
 	}
 
 
-#define TanksWar_Source_TanksWar_TankAimingComponent_h_16_INCLASS_NO_PURE_DECLS \
+#define TanksWar_Source_TanksWar_TankAimingComponent_h_20_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUTankAimingComponent(); \
 	friend TANKSWAR_API class UClass* Z_Construct_UClass_UTankAimingComponent(); \
@@ -64,7 +64,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define TanksWar_Source_TanksWar_TankAimingComponent_h_16_INCLASS \
+#define TanksWar_Source_TanksWar_TankAimingComponent_h_20_INCLASS \
 private: \
 	static void StaticRegisterNativesUTankAimingComponent(); \
 	friend TANKSWAR_API class UClass* Z_Construct_UClass_UTankAimingComponent(); \
@@ -74,7 +74,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define TanksWar_Source_TanksWar_TankAimingComponent_h_16_STANDARD_CONSTRUCTORS \
+#define TanksWar_Source_TanksWar_TankAimingComponent_h_20_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UTankAimingComponent(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UTankAimingComponent) \
@@ -87,7 +87,7 @@ private: \
 public:
 
 
-#define TanksWar_Source_TanksWar_TankAimingComponent_h_16_ENHANCED_CONSTRUCTORS \
+#define TanksWar_Source_TanksWar_TankAimingComponent_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UTankAimingComponent(UTankAimingComponent&&); \
@@ -98,26 +98,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UTankAimingComponent); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UTankAimingComponent)
 
 
-#define TanksWar_Source_TanksWar_TankAimingComponent_h_16_PRIVATE_PROPERTY_OFFSET
-#define TanksWar_Source_TanksWar_TankAimingComponent_h_13_PROLOG
-#define TanksWar_Source_TanksWar_TankAimingComponent_h_16_GENERATED_BODY_LEGACY \
+#define TanksWar_Source_TanksWar_TankAimingComponent_h_20_PRIVATE_PROPERTY_OFFSET
+#define TanksWar_Source_TanksWar_TankAimingComponent_h_17_PROLOG
+#define TanksWar_Source_TanksWar_TankAimingComponent_h_20_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TanksWar_Source_TanksWar_TankAimingComponent_h_16_PRIVATE_PROPERTY_OFFSET \
-	TanksWar_Source_TanksWar_TankAimingComponent_h_16_RPC_WRAPPERS \
-	TanksWar_Source_TanksWar_TankAimingComponent_h_16_INCLASS \
-	TanksWar_Source_TanksWar_TankAimingComponent_h_16_STANDARD_CONSTRUCTORS \
+	TanksWar_Source_TanksWar_TankAimingComponent_h_20_PRIVATE_PROPERTY_OFFSET \
+	TanksWar_Source_TanksWar_TankAimingComponent_h_20_RPC_WRAPPERS \
+	TanksWar_Source_TanksWar_TankAimingComponent_h_20_INCLASS \
+	TanksWar_Source_TanksWar_TankAimingComponent_h_20_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define TanksWar_Source_TanksWar_TankAimingComponent_h_16_GENERATED_BODY \
+#define TanksWar_Source_TanksWar_TankAimingComponent_h_20_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TanksWar_Source_TanksWar_TankAimingComponent_h_16_PRIVATE_PROPERTY_OFFSET \
-	TanksWar_Source_TanksWar_TankAimingComponent_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	TanksWar_Source_TanksWar_TankAimingComponent_h_16_INCLASS_NO_PURE_DECLS \
-	TanksWar_Source_TanksWar_TankAimingComponent_h_16_ENHANCED_CONSTRUCTORS \
+	TanksWar_Source_TanksWar_TankAimingComponent_h_20_PRIVATE_PROPERTY_OFFSET \
+	TanksWar_Source_TanksWar_TankAimingComponent_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+	TanksWar_Source_TanksWar_TankAimingComponent_h_20_INCLASS_NO_PURE_DECLS \
+	TanksWar_Source_TanksWar_TankAimingComponent_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -126,4 +126,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #define CURRENT_FILE_ID TanksWar_Source_TanksWar_TankAimingComponent_h
 
 
+#define FOREACH_ENUM_EFIRESTATE(op) \
+	op(EFireState::Reloading) \
+	op(EFireState::Aiming) 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

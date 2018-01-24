@@ -25,7 +25,8 @@ public:
 
 	void AimToTarget();
 
-	ATank* GetTank();
+	UFUNCTION(BlueprintCallable, Category = "SetUp")
+		ATank* GetTank();
 	
 	bool GetSightRayCast(FVector &OutRayCast);
 

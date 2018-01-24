@@ -408,9 +408,11 @@
   <ItemGroup>
     <ClCompile Include="..\..\Source\TanksWar\Bullet.cpp" />
     <ClCompile Include="..\..\Source\TanksWar\TankAimingComponent.cpp" />
+    <ClCompile Include="..\..\Source\TanksWar\TankTruck.cpp" />
     <ClCompile Include="..\..\Source\TanksWar\TankTurret.cpp" />
     <ClInclude Include="..\..\Source\TanksWar\Bullet.h" />
     <ClInclude Include="..\..\Source\TanksWar\TankAimingComponent.h" />
+    <ClInclude Include="..\..\Source\TanksWar\TankTruck.h" />
     <ClInclude Include="..\..\Source\TanksWar\TankTurret.h" />
     <None Include="..\..\TanksWar.uproject" />
     <None Include="..\..\Source\TanksWar.Target.cs" />
