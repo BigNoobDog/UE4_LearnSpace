@@ -14,6 +14,19 @@ void ATankAIController::BeginPlay() {
 	}
 }
 
+void ATankAIController::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+	if (GetAITank()) {
+		auto TankAiming = GetAITank()->FindComponentByClass<UTankAimingComponent>();
+		TankAiming->AimDir(GetPlayerTank()->GetActorLocation());
+		if (TankAiming->Firestate == EFireState::Locked) {
+			TankAiming->Fire();
+		}
+		MoveToActor(GetAITank(), InitDis);
+	}
+}
+
 ATank * ATankAIController::GetAITank()
 {
 	return Cast<ATank>(GetPawn());
