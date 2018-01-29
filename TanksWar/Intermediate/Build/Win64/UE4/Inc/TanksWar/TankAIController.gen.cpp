@@ -41,6 +41,16 @@ void EmptyLinkFunctionForGeneratedCodeTankAIController() {}
 				{ "ModuleRelativePath", "TankAIController.h" },
 			};
 #endif
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_InitDis_MetaData[] = {
+				{ "Category", "TankAIController" },
+				{ "ModuleRelativePath", "TankAIController.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FFloatPropertyParams NewProp_InitDis = { UE4CodeGen_Private::EPropertyClass::Float, "InitDis", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000001, 1, nullptr, STRUCT_OFFSET(ATankAIController, InitDis), METADATA_PARAMS(NewProp_InitDis_MetaData, ARRAY_COUNT(NewProp_InitDis_MetaData)) };
+			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_InitDis,
+			};
 			static const FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 				TCppClassTypeTraits<ATankAIController>::IsAbstract,
 			};
@@ -49,7 +59,7 @@ void EmptyLinkFunctionForGeneratedCodeTankAIController() {}
 				DependentSingletons, ARRAY_COUNT(DependentSingletons),
 				0x00900280u,
 				nullptr, 0,
-				nullptr, 0,
+				PropPointers, ARRAY_COUNT(PropPointers),
 				nullptr,
 				&StaticCppClassTypeInfo,
 				nullptr, 0,
@@ -59,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeTankAIController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATankAIController, 65734924);
+	IMPLEMENT_CLASS(ATankAIController, 3865978646);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ATankAIController(Z_Construct_UClass_ATankAIController, &ATankAIController::StaticClass, TEXT("/Script/TanksWar"), TEXT("ATankAIController"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ATankAIController);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
